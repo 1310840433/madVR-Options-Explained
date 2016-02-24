@@ -1,7 +1,7 @@
-This external community based and written guide is designed to answer the most madVR related questions by explaining each toggle. It's not official from the original author Mathias Rauen alias madhsi.
+This external community based and written guide is designed to answer the most madVR related questions by explaining each toggle. It's not official from the original author Mathias Rauen alias [madhsi](http://madvr.net/).
 
 
-Current MadVR version: 0.90.12
+Current MadVR version: [0.90.12](http://madshi.net/madVR.zip) - [Changelog](http://madshi.net/madVR/version.txt)
 
 
 Guide Version: 0.0.1
