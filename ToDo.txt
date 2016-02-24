@@ -1,0 +1,9 @@
+ToDO:
+======
+
+* Automatically crab and display latest madVR version
+* Add screenshot's
+* Correct spelling
+* Convert to .pdf option?
+* Markdown support to make GitHub happy 
+* .. stuff yu report
