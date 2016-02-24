@@ -1,19 +1,23 @@
-# madVR-Options-Explained
-
-This external community based and written guide is designed to answer the most madVR related questions. It's not official from the original author Mathias Rauen alias madhsi. 
+This external community based and written guide is designed to answer the most madVR related questions by explaining each toggle. It's not official from the original author Mathias Rauen alias madhsi.
 
 
 Current MadVR version: 0.90.12
+
+
 Guide Version: 0.0.1
+
+
 
 Devices
 --------
 
 Device name: [EDID Product Name] A name for the display (customizable).
+
 Device type: [unknown] Sets the icon for the display. When set to projector the 'screen config' section is available.
 
 Identification:
 EDID information, some displays are detected with different identifications depending on how they are attached or detected. You can drag and drop these identification entries to combine displays.
+
 
 Properties:
 the display expects the following RGB output levels: [PC levels (0-255)] This is what your display expects to receive. 'PC levels (0-255)' means “use a 16-235 YCbCr to 0-255 RGB conversion matrix” and 'TV levels (16-235)' means “use a 0-255 YCbCr to 0-255 RGB conversion matrix”. If the source is flagged full range either a 0-255 YCbCr to 0-255 RGB or a 0-255 YCbCr to 16-235 RGB conversion matrix is used instead.
@@ -43,8 +47,10 @@ activate lens memory number: Sends a command to a JVC or Sony projector to activ
 anamorphic lens: Allows output to non-square pixels.
 
 
+
 Processing
 ----------
+
 
 Deinterlacing:
 if in doubt, activate deinterlacing: [Disabled] deinterlace video not flagged as progressive
@@ -53,11 +59,14 @@ force film mode: [Disabled] force IVTC, reconstructing the original progressive 
 force video mode: [Disabled] force DXVA deinterlacing, uses the GPU's deinterlacing as set in its drivers.
 only look at pixels in the frame center: [Enabled]
 
+
 artifact removal: [Disabled]
 reduce banding artifacts: Fade detection does not run if both options are set to the same value for a small increase in performance. Allowing all frames detected as part of a fade to be re-rendered using the higher setting removes five frames from madVR's rendering buffer every time a fade is detected.
 
+
 image enhancements: [Disabled]
 These are applied before scaling. See 'upscaling refinement'
+
 
 zoom control:
 disable scaling if image size changes by only: [... 2 lines or less] If the resolution needs scaling by the number of pixels set or less no image scaling is done, black pixels are added to the right and/or bottom edge instead.
@@ -73,7 +82,9 @@ if there are big black bars: Allows setting separate handling of large black bar
 zoom small black bars away: This zooms into the video to remove the black bars, this usually results in cropping a small amount of video information off of one edge to maintain the original aspect ratio and resizing to the original display resolution. e.g. The bottom is cropped when cropping small black bars on the left and right and the video scaled to the original resolution.
 crop black bars: This crops black bars, changing the display aspect ratio and resolution. Cropping black bars increases performance as the pixels no longer need to be processed. Profile rules referencing resolution will use the after crop resolution.
 
+
 scaling algorithms
+------------------
 
 chroma upscaling: [Bicubic 75]
 How madVR doubles the chroma resolution in both dimensions (assuming a YCbCr 4:2:0 source) to get YCbCr 4:4:4 before the conversion to RGB. When downscaling by a large amount this setting is used to bring the chroma to the target resolution instead of the luma resolution. Because madVR cannot use Jinc for downscaling Jinc falls back to Lanczos3 when downscaling the chroma.
@@ -133,6 +144,8 @@ Repeat steps 2-4 several times.
 
 
 rendering
+----------
+
 
 general settings:
 delay playback start until render queue is full: [Disabled] Pauses playback until all the buffers are full. With this option disabled only the present buffers need to fill before playback starts.
@@ -173,6 +186,7 @@ These options are sorted based on their impact on quality with the options that 
 [Defaults to all enabled from the top down up to, and including, "don't rerender frames when fade in/out is detected"]
 
 More advanced topics
+---------------------
 
 Toggle the On Screen Display by pressing Ctrl-J. The sum of the average stats "deinterlace" (if present), "rendering", and "present" should be a bit below the frame time in the line "v-sync [X] ms, frame [Y] ms" to avoid dropped frames and presentation glitches.
 
@@ -222,4 +236,4 @@ Known Limitations or Complications:
 -madVR currently always switches to 23Hz when having forced film mode on while playing 59i content, this is often optimal, but not always. With no good way for madVR to know it goes with 23 Hz.
 
 Theoretical rendering path:
-It is oversimplified and a lot of what madVR does is not included.
+It is oversimplified and a lot of what madVR does is not included. See screenshots folder.
