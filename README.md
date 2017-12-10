@@ -1,7 +1,10 @@
 This external community based and written guide is designed to answer the most madVR related questions by explaining each toggle. It's not official from the original author Mathias Rauen alias [madhsi](http://madvr.net/).
 
+[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40CHEF-KOCH)](https://twitter.com/FZeven)
+[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/CHEF-KOCH)
+[![Discord](https://discordapp.com/api/guilds/204394292519632897/widget.png)](https://discord.me/NVinside)
 
-Current MadVR version: [0.92.4.0](http://madshi.net/madVR.zip) - [Changelog](http://madshi.net/madVR/version.txt)
+Current MadVR version: [0.92.9.0](http://madshi.net/madVR.zip) - [Changelog](http://madshi.net/madVR/version.txt)
 
 
 Guide Version: 0.0.1
